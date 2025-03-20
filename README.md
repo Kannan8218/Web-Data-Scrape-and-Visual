@@ -44,8 +44,9 @@ Ensure you have the following Python packages installed:
 
 ## Installation
 Install the required dependencies using:
-    pip install pandas streamlit matplotlib seaborn
-
+```sh
+pip install pandas streamlit matplotlib seaborn
+```
 
 ## How to Run
 1. **Run the Data Scraping Notebook**  
@@ -58,11 +59,13 @@ Install the required dependencies using:
 
 2. **Run the Visualization Script**  
    - Execute the Streamlit app with the following command:
-        streamlit run IMDB_data-visual.py
-
-
+   ```sh
+   streamlit run IMDB_data-visual.py
+   ```
 3. Open the displayed **local URL** in your web browser to explore the IMDB data visualizations.
 
----
-
-This project helps in extracting, cleaning, and analyzing IMDB movie data efficiently.
+## Adding More Genres
+If you want to retrieve more genre-specific movie details, follow these steps:
+- Add the new IMDb genre link to the `self.urls` list.
+- Include the corresponding genre name at the same index in the `self.genres` list.
+- Ensure that both the URL in `self.urls` and the genre name in `self.genres` align correctly.
